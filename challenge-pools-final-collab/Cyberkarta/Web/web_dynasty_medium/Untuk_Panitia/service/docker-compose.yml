@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+    dynasty:
+        build: ./src/
+        container_name: dynasty
+        volumes:
+            - ./src/:/var/www/html/
+        ports:
+            - "1337:80"
+        stdin_open: true
+        tty: true
+        restart: always

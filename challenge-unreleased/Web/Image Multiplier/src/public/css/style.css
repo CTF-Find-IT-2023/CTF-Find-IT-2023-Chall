@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.file-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.file-input {
+    border: solid 1px #ccc;
+    padding: 10px;
+}
+
+.file-label {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+}

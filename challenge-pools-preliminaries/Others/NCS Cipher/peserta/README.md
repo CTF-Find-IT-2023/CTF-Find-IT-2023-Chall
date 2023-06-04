@@ -1,0 +1,2 @@
+# Description
+In late 2015, me and my friends listens to a lot of NCS (NoCopyrightSounds). Anyways, lately we find that a lot of ways to hide an information is a little bit boring. So I made this cipher method using NCS music. Well, it may be easy to break and figure out the hidden message, but atleast it's fun to listen to right?

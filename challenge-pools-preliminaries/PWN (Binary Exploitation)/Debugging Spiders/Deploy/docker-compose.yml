@@ -1,0 +1,10 @@
+version: "3"
+name: debuggingspiders
+services:
+  code:
+    image: pwn:debuggingSpiders
+    restart: always
+    build:
+      context: .
+    ports:
+      - "8256:5002"

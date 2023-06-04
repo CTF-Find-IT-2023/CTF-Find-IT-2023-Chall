@@ -1,0 +1,9 @@
+click
+Flask
+importlib-metadata
+itsdangerous
+Jinja2
+MarkupSafe
+SQLAlchemy
+Werkzeug
+zipp

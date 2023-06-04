@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+    app:
+        build: 
+            context: ./
+            dockerfile: Dockerfile
+        container_name: image-multiplier
+        restart: always
+        working_dir: /var/www
+        volumes:
+            - ../src:/var/www
+    nginx:
+        image: nginx:1.19-alpine
+        container_name: image-multiplier-nginx
+        restart: always
+        ports:
+            - "5010:80"
+        volumes:
+            - ./nginx:/etc/nginx/conf.d
+            - ../src:/var/www/
+            - ./logs:/var/log/nginx
+        depends_on:
+            - app
+    php:
+        image: php:8.2-fpm-alpine
+        container_name: image-multiplier-php
+        restart: always
+        volumes:
+            - ../src:/var/www
+        depends_on:
+            - app

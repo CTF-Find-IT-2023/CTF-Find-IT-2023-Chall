@@ -1,0 +1,55 @@
+('D:\\Astaga Ngoding\\CTF Find IT\\challenge-pools-preliminaries\\Reverse '
+ 'Engineering\\Bypass the Py\\build\\chall\\chall.pkg',
+ {'BINARY': True,
+  'DATA': True,
+  'EXECUTABLE': True,
+  'EXTENSION': True,
+  'PYMODULE': True,
+  'PYSOURCE': True,
+  'PYZ': False,
+  'SPLASH': True},
+ [('PYZ-00.pyz',
+   'D:\\Astaga Ngoding\\CTF Find IT\\challenge-pools-preliminaries\\Reverse '
+   'Engineering\\Bypass the Py\\build\\chall\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'D:\\Astaga Ngoding\\CTF Find IT\\challenge-pools-preliminaries\\Reverse '
+   'Engineering\\Bypass the Py\\build\\chall\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'D:\\Astaga Ngoding\\CTF Find IT\\challenge-pools-preliminaries\\Reverse '
+   'Engineering\\Bypass the Py\\build\\chall\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'D:\\Astaga Ngoding\\CTF Find IT\\challenge-pools-preliminaries\\Reverse '
+   'Engineering\\Bypass the '
+   'Py\\build\\chall\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'D:\\Astaga Ngoding\\CTF Find IT\\challenge-pools-preliminaries\\Reverse '
+   'Engineering\\Bypass the Py\\build\\chall\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'D:\\Astaga Ngoding\\CTF Find IT\\challenge-pools-preliminaries\\Reverse '
+   'Engineering\\Bypass the Py\\build\\chall\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'C:\\Users\\gigah\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'C:\\Users\\gigah\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth__tkinter',
+   'C:\\Users\\gigah\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth__tkinter.py',
+   'PYSOURCE'),
+  ('chall',
+   'D:\\Astaga Ngoding\\CTF Find IT\\challenge-pools-preliminaries\\Reverse '
+   'Engineering\\Bypass the Py\\chall.py',
+   'PYSOURCE')],
+ True,
+ False,
+ False,
+ [],
+ None,
+ None,
+ None)

@@ -1,0 +1,9 @@
+version: "3"
+services:
+  code:
+    image: pwn:everythingMachine
+    restart: always
+    build:
+      context: .
+    ports:
+      - "8128:5001"

@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+    garis_start_mysql:
+        image: mysql
+        container_name: garis_start_mysql
+        ports:
+          - "1338:3306"
+        volumes:
+            - .docker/setup.sql:/docker-entrypoint-initdb.d/setup.sql
+        command: --default-authentication-plugin=mysql_native_password
+        environment:
+            MYSQL_ROOT_PASSWORD: JsjlYBpx88st7vsdFJQva77M1PxVIXj57QYiPGKXanj00HGEiZ
+            MYSQL_DATABASE: garisstart
+        restart: always
+
+    garisstart_php:
+        build: ./php/
+        container_name: garisstart_php
+        depends_on:
+            - garis_start_mysql
+        volumes:
+            - ./php/:/var/www/html/
+        ports:
+            - "1337:80"
+        environment:
+            - MYSQL_USER=web
+            - MYSQL_PASS=dAx5f5yyRFucP5HFVVoJ4MMBSen4gNYafSoiRus06EsMvuf2mi
+            - MYSQL_DATABASE=garisstart
+        stdin_open: true
+        tty: true
+        restart: always

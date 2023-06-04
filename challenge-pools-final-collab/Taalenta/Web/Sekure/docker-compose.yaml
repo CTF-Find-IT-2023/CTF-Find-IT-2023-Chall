@@ -1,0 +1,31 @@
+version: '2'
+
+services:
+  main:
+    container_name: w00-sekure
+    restart: on-failure
+    image: php:8.0-apache
+    volumes:
+      - ./src:/var/www/html/
+      - ./fl4g_k3r3n_4bies.txt:/fl4g_k3r3n_4bies.txt
+    ports:
+      - "50621:80"
+    build:
+      context: ./src
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+  db:
+    container_name: w00-sekuredb
+    image: mysql
+    restart: always
+    environment:
+        MYSQL_ROOT_PASSWORD: password
+        MYSQL_DATABASE: web_blindsql
+        MYSQL_USER: ctf
+        MYSQL_PASSWORD: password
+    ports:
+        - "9907:3306"
+    volumes:
+      - "./web_blindsql.sql:/docker-entrypoint-initdb.d/setup.sql"
+      - "./mysql_data:/var/lib/mysql"

@@ -1,0 +1,2 @@
+# Description
+Twitch user 'dundorma' is an avid twitch enjoyer. He watches twitch at least 15 hours a day. He can't live without watching twitch. He's been watching his favorite streamer 'xqc' since 2017. Find dundorma's chatlog in xqc's chat to get the flag.

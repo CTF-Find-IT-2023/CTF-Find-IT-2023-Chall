@@ -1,0 +1,36 @@
+body{
+	font-family: "roboto";
+	background: #F4F4F4;
+}
+ 
+h1{
+	font-family: "roboto";
+	text-align: center;
+}
+ 
+p{
+	font-family: "roboto";
+	text-align: center;
+}
+
+submit{
+	font-family: "roboto";
+	text-align: center;
+}
+
+.kotak{
+	margin: 10px auto;
+	background: #fff;
+	
+	width: 2vh;
+	padding: 20px 0px;
+}
+ 
+.kotak table tr td{
+	padding: 5px;
+}
+ 
+.kotak table tr td input{
+	padding: 5px;
+	font-size: 12pt;
+}
